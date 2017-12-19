@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="Username" value="dovgichnik@gmail.com"/>
+  <parameter name="Password" value="123456789"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="testNG.TestCasesForLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="Verify_user_can_Login_in_with_valid_Email_and_Password_combination" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG.TestCasesForLogin -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

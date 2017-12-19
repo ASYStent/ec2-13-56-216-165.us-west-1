@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestCasesForLoginInChrome]">
+  <test name="1(failed)">
+    <classes>
+      <class name="testNG.TestCasesForLoginInChrome">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="Verify_user_can_Login_in_with_valid_Email_and_Password_combination"/>
+        </methods>
+      </class> <!-- testNG.TestCasesForLoginInChrome -->
+    </classes>
+  </test> <!-- 1(failed) -->
+</suite> <!-- Failed suite [TestCasesForLoginInChrome] -->
