@@ -12,8 +12,6 @@ public class LogIn_Page {
     	return element;
     }
 
-    
-    
     public static WebElement input_Password(){
     	element = Exam.driver.findElement(By.xpath("//input[@name='password']"));
     	return element;
