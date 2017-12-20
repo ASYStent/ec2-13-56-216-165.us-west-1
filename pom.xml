@@ -1,14 +1,22 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="App">
-	<parameter name="Username" value="dovgichnik@gmail.com" />
-	<parameter name="Password" value="123456789" />
-	<parameter name="ERUsername" value="dovgichnik1@gmail.com" />
-	<parameter name="ERPassword" value="12345678" />
-	<parameter name="GPassword" value="ADA TT010895-7116" />
-	<test name="TestCasesForLogin">
-		<classes>
-			<class name="testNG.TestCasesForLogin" />
-			<class name="pageObjects.LoginPage" />
-		</classes>
-	</test>
-</suite>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+ 
+  <name>Maven Quick Start Archetype</name>
+  <url>http://maven.apache.org</url>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
