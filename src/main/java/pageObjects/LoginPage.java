@@ -9,8 +9,8 @@ import java.io.IOException;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-//import org.apache.poi.ss.usermodel.Cell;
-//import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,8 +21,9 @@ public class LoginPage {
 	public LoginPage(WebDriver driver){ 
         this.driver=driver; 
     }
-
+     
 	WebDriver driver;
+	
 	
     @FindBy(how=How.XPATH, using="//input[@name='email']") WebElement usernameField;
     @FindBy(how=How.XPATH, using="//input[@name='password']") WebElement passwordField;
@@ -95,44 +96,44 @@ public class LoginPage {
  			if (title==true ){
  				System.out.println("Title is displayed");
  				
-//				HSSFWorkbook workbook = new HSSFWorkbook();
-// 	 			HSSFSheet sheet = workbook.getSheet("Test Cases");
-// 	 			
-// 	 			Row row = sheet.getRow(0);
-// 	 			int maxNumOfCells = 500;
-// 	 			
-//				for( int cellCounter = 0; cellCounter < maxNumOfCells; cellCounter ++){ // Loop through cells
-//
-// 	                HSSFCell cell;
-//
-// 	                if( row.getCell(cellCounter ) == null ){
-// 	                	Cell cell0 = row.createCell(0);
-// 	                	cell0.setCellValue(id);
-// 	 			
-// 	                	Cell cell1 = row.createCell(1);
-// 	                	cell1.setCellValue(title1);
-// 	 			
-// 	                	Cell cell2 = row.createCell(2);
-// 	                	cell2.setCellValue("executed");
-// 	 			
-// 	                	Cell cell4 = row.createCell(4);
-// 	                	cell4.setCellValue("Pass");
-// 	                } 
-// 	                else {
-// 	                    cell = (HSSFCell) row.getCell(cellCounter);
-// 	                }
-// 	            }
-// 	 			
-// 	 			
-// 	 			try(FileOutputStream out = new FileOutputStream(new File("D:/MyDoc/automation/java-webdriver-cucumber/ProMytheUs/src/exel/report.xls"))) {
-// 	 				workbook.write(out);
-// 	 				System.out.println("Excel written successfully..");
-// 	 			} catch (FileNotFoundException e) {
-// 	 				e.printStackTrace();
-// 	 			} catch (IOException e) {
-// 	 				e.printStackTrace();
-// 	 			}
-//
+				HSSFWorkbook workbook = new HSSFWorkbook();
+ 	 			HSSFSheet sheet = workbook.getSheet("Test Cases");
+ 	 			
+ 	 			Row row = sheet.getRow(0);
+ 	 			int maxNumOfCells = 500;
+ 	 			
+				for( int cellCounter = 0; cellCounter < maxNumOfCells; cellCounter ++){ // Loop through cells
+
+ 	                HSSFCell cell;
+
+ 	                if( row.getCell(cellCounter ) == null ){
+ 	                	Cell cell0 = row.createCell(0);
+ 	                	cell0.setCellValue(id);
+ 	 			
+ 	                	Cell cell1 = row.createCell(1);
+ 	                	cell1.setCellValue(title1);
+ 	 			
+ 	                	Cell cell2 = row.createCell(2);
+ 	                	cell2.setCellValue("executed");
+ 	 			
+ 	                	Cell cell4 = row.createCell(4);
+ 	                	cell4.setCellValue("Pass");
+ 	                } 
+ 	                else {
+ 	                    cell = (HSSFCell) row.getCell(cellCounter);
+ 	                }
+ 	            }
+ 	 			
+ 	 			
+ 	 			try(FileOutputStream out = new FileOutputStream(new File("D:/MyDoc/automation/java-webdriver-cucumber/ProMytheUs/src/exel/report.xls"))) {
+ 	 				workbook.write(out);
+ 	 				System.out.println("Excel written successfully..");
+ 	 			} catch (FileNotFoundException e) {
+ 	 				e.printStackTrace();
+ 	 			} catch (IOException e) {
+ 	 				e.printStackTrace();
+ 	 			}
+
  				}
 		}
 	    catch (Exception e){

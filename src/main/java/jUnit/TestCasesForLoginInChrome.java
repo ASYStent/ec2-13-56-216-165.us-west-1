@@ -12,16 +12,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestCasesForLoginInChrome {
 	public static ChromeDriver driver;
- 	WebElement element,element2;
+ 	WebElement element;
+ 	WebElement element2;
  	String element3;
 
 	@BeforeClass
-	public static void openBrowser() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:/MyDoc/automation/java-webdriver-cucumber/drivers/chromedriver.exe");
+	public static void openBrowser() {
+		System.setProperty("webdriver.chrome.driver", "D:\\MyDoc\\automation\\java-webdriver-cucumber\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
         driver.manage().deleteAllCookies();
-        Thread.sleep(3);
 	}
 	
 	@Test
