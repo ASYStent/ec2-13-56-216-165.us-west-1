@@ -18,9 +18,10 @@ public class TestCasesForLoginInChrome {
 
 	@BeforeClass
 	public static void openBrowser() {
-		System.setProperty("webdriver.chrome.driver", "D:\\MyDoc\\automation\\java-webdriver-cucumber\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:/MyDoc/automation/java-webdriver-cucumber/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
 	}
 	
