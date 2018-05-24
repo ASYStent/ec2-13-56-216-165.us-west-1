@@ -1,14 +1,14 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="App">
-	<parameter name="Username" value="dovgichnik@gmail.com" />
-	<parameter name="Password" value="123456789" />
-	<parameter name="ERUsername" value="dovgichnik1@gmail.com" />
-	<parameter name="ERPassword" value="12345678" />
-	<parameter name="GPassword" value="ADA TT010895-7116" />
-	<test name="TestCasesForLogin">
-		<classes>
-			<class name="testNG.TestCasesForLogin" />
-			<class name="pageObjects.LoginPage" />
-		</classes>
-	</test>
-</suite>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="jUnit.TestCasesForLoginInChrome"/>
+      <class name="jUnit.TestCasesForPasswordChange"/>
+      <class name="testForQAUBER.Exam"/>
+      <class name="testNG.TestCasesForLogin"/>
+      <class name="jUnit.TestCasesForMyProfileChrome2"/>
+      <class name="jUnit.TestCasesForMyProfileChrome"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
