@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="ERPassword" value="12345678"/>
+    <parameter name="Username" value="dovgichnik@gmail.com"/>
+    <parameter name="ERUsername" value="dovgichnik1@gmail.com"/>
+    <parameter name="GPassword" value="ADA TT010895-7116"/>
+    <parameter name="Password" value="123456789"/>
+    <classes>
+      <class name="testNG.TestCasesForLogin">
+        <methods>
+          <include name="Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="beforeSuite"/>
+          <include name="Verify_user_can_Login_in_with_valid_Email_and_Password_combination" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNG.TestCasesForLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

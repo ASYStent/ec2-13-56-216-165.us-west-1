@@ -1,5 +1,7 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
+
 //import java.io.File;
 //import java.io.FileInputStream;
 //import java.io.FileNotFoundException;
@@ -15,6 +17,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 	
@@ -44,8 +48,8 @@ public class LoginPage {
     @FindBy(how=How.XPATH, using="//h2[text()='Error!']") WebElement errorText3;
     @FindBy(how=How.LINK_TEXT, using="Forgot your password?") WebElement passwordResetLink;
     @FindBy(how=How.LINK_TEXT, using="Register Now") WebElement registrationLink;
-    @FindBy(how=How.TAG_NAME, using="email") WebElement emailField;
-    
+    @FindBy(how=How.XPATH, using="//input[@id='forgotPasswordEmail']") WebElement emailField;
+    @FindBy(how=How.LINK_TEXT, using="SIGN IN") WebElement buttonSingIn;
     
 
     
@@ -67,7 +71,10 @@ public class LoginPage {
 	public void inputGoogleEmail(String Username) {
 		googleEmailField.sendKeys(Username);
 	}
-	public void inputGooglePassword(String GPassword) {
+	public void inputGooglePassword(String GPassword) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.name("password")));
+//		Thread.sleep(5000);
 		googlePasswordField.sendKeys(GPassword);
 	}
 	public void clickLogin(){
@@ -88,7 +95,10 @@ public class LoginPage {
 	public void clickNext() {
 		buttonNext.click();
 	}
-	
+	public void clickSing_In() {
+		buttonSingIn.click();	
+	}
+
 	
 	
 	public void verifyLogin(String id, String title1){

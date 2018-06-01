@@ -1,11 +1,12 @@
 package testNG;
 
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Parameters;
-//import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
+
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 public class TestCasesForLogin extends Start {
 	
@@ -59,7 +60,7 @@ public class TestCasesForLogin extends Start {
  	
  	@Parameters({"Username","GPassword"})
  	@Test (priority = 4)
- 	public void Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(String Username, String GPassword){
+ 	public void Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(String Username, String GPassword) throws InterruptedException{
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
  			LG.clickPasswordReset();
@@ -67,6 +68,7 @@ public class TestCasesForLogin extends Start {
  			LG.clickReset();
  			LG.clickOK();
  			LG.getGoogleMailURL();
+ 			LG.clickSing_In();
  			LG.inputGoogleEmail(Username);
  			LG.clickNext();
  			LG.inputGooglePassword(GPassword);

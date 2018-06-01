@@ -9,12 +9,7 @@
 	<parameter name="GPassword" value="ADA TT010895-7116" />
     
     <classes>
-      <class name="jUnit.TestCasesForLoginInChrome"/>
-      <class name="jUnit.TestCasesForPasswordChange"/>
-      <class name="testForQAUBER.Exam"/>
       <class name="testNG.TestCasesForLogin"/>
-      <class name="jUnit.TestCasesForMyProfileChrome2"/>
-      <class name="jUnit.TestCasesForMyProfileChrome"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
