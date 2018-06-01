@@ -8,11 +8,73 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8,259</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num">0</td><td class="num attn">2</td><td class="num">32,565</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testNG.TestCasesForLogin</td><td><a href="#m0">Verify_user_can_Login_in_with_valid_Email_and_Password_combination</a></td><td rowspan="1">1512778462896</td><td rowspan="1">4108</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testNG.TestCasesForLogin</td><td><a href="#m0">Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen</a></td><td rowspan="1">1527725151787</td><td rowspan="1">11190</td></tr><tr class="failedeven"><td><a href="#m1">Verify_user_can_Login_in_with_valid_Email_and_Password_combination</a></td><td rowspan="1">1527725146780</td><td rowspan="1">2681</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">testNG.TestCasesForLogin</td><td><a href="#m2">Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page</a></td><td rowspan="1">1527725151146</td><td rowspan="1">637</td></tr><tr class="passedeven"><td><a href="#m3">Verify_Password_field_masks_users_input_with_bullets</a></td><td rowspan="1">1527725170769</td><td rowspan="1">555</td></tr><tr class="passedeven"><td><a href="#m4">Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page</a></td><td rowspan="1">1527725172360</td><td rowspan="1">746</td></tr><tr class="passedeven"><td><a href="#m5">Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email</a></td><td rowspan="1">1527725162986</td><td rowspan="1">6471</td></tr><tr class="passedeven"><td><a href="#m6">Verify_that_user_can_copy_and_paste_email_field_info</a></td><td rowspan="1">1527725169463</td><td rowspan="1">706</td></tr><tr class="passedeven"><td><a href="#m7">Verify_user_cannot_copypaste_values_from_Password_and_Retype_password_fields</a></td><td rowspan="1">1527725170171</td><td rowspan="1">596</td></tr><tr class="passedeven"><td><a href="#m8">Verify_user_cannot_login_with_an_invalid_email_address</a></td><td rowspan="1">1527725173109</td><td rowspan="1">1244</td></tr><tr class="passedeven"><td><a href="#m9">Verify_user_cannot_login_with_an_invalid_password</a></td><td rowspan="1">1527725171326</td><td rowspan="1">1032</td></tr><tr class="passedeven"><td><a href="#m10">Verify_user_cannot_login_with_blank_Email_field</a></td><td rowspan="1">1527725149473</td><td rowspan="1">876</td></tr><tr class="passedeven"><td><a href="#m11">Verify_user_cannot_login_with_blank_Password_field</a></td><td rowspan="1">1527725150351</td><td rowspan="1">793</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testNG.TestCasesForLogin#Verify_user_can_Login_in_with_valid_Email_and_Password_combination</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td><td>123456789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">testNG.TestCasesForLogin#Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td><td>ADA TT010895-7116</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;email&apos;]&quot;}
+  (Session info: chrome=67.0.3396.62)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;NIKITA-PC&apos;, ip: &apos;172.31.98.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5632_9490}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.62, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5e6f32cb95269333fce572265f79d3f4
+*** Element info: {Using=xpath, value=//input[@type=&apos;email&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
+	at pageObjects.LoginPage.inputGoogleEmail(LoginPage.java:72)
+	at testNG.TestCasesForLogin.Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(TestCasesForLogin.java:70)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testNG.TestCasesForLogin#Verify_user_can_Login_in_with_valid_Email_and_Password_combination</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td><td>123456789</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button class=&quot;btn btn-block btn-primary mt-lg&quot; id=&quot;login&quot;&gt;...&lt;/button&gt; is not clickable at point (517, 381). Other element would receive the click: &lt;div class=&quot;cover active&quot; ng-class=&quot;{&apos;active&apos;: $ctrl.isActive}&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=67.0.3396.62)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;NIKITA-PC&apos;, ip: &apos;172.31.98.120&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir5632_9490}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.62, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5e6f32cb95269333fce572265f79d3f4
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at pageObjects.LoginPage.clickLogin(LoginPage.java:81)
+	at testNG.TestCasesForLogin.Verify_user_can_Login_in_with_valid_Email_and_Password_combination(TestCasesForLogin.java:27)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testNG.TestCasesForLogin#Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testNG.TestCasesForLogin#Verify_Password_field_masks_users_input_with_bullets</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>123456789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testNG.TestCasesForLogin#Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testNG.TestCasesForLogin#Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testNG.TestCasesForLogin#Verify_that_user_can_copy_and_paste_email_field_info</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testNG.TestCasesForLogin#Verify_user_cannot_copypaste_values_from_Password_and_Retype_password_fields</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>123456789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testNG.TestCasesForLogin#Verify_user_cannot_login_with_an_invalid_email_address</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dovgichnik1@gmail.com</td><td>123456789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testNG.TestCasesForLogin#Verify_user_cannot_login_with_an_invalid_password</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td><td>12345678</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testNG.TestCasesForLogin#Verify_user_cannot_login_with_blank_Email_field</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>123456789</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testNG.TestCasesForLogin#Verify_user_cannot_login_with_blank_Password_field</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>dovgichnik@gmail.com</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
