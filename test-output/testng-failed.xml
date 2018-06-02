@@ -13,7 +13,7 @@
           <include name="Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen" invocation-numbers="0"/>
           <include name="closeBrowser"/>
           <include name="beforeSuite"/>
-          <include name="Verify_user_can_Login_in_with_valid_Email_and_Password_combination" invocation-numbers="0"/>
+          <include name="Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email" invocation-numbers="0"/>
         </methods>
       </class> <!-- testNG.TestCasesForLogin -->
     </classes>
