@@ -1,12 +1,9 @@
 package testNG;
 
 import org.testng.annotations.Test;
-
 import pageObjects.LoginPage;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
-//import org.testng.annotations.Test;
 
 public class TestCasesForLogin extends Start {
 	

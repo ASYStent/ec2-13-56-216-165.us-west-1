@@ -14,7 +14,7 @@ public class Start {
 	
  	@BeforeTest
  	public void beforeSuite() throws IOException{
- 		System.setProperty("webdriver.chrome.driver", "D:\\MyDoc\\automation\\java-webdriver-cucumber\\drivers\\chromedriver.exe");
+ 		System.setProperty("webdriver.chrome.driver", "D:/MyDoc/automation/java-webdriver-cucumber/drivers/chromedriver.exe");
  		driver = new ChromeDriver();
  		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
  		System.out.println("Browser Opened.");
