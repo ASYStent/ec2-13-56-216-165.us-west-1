@@ -3,7 +3,7 @@
 	<groupId>WebdriverTest</groupId>
 	<artifactId>WebdriverTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-  
+
 	<build>
 	    <plugins>
 	        <plugin>
@@ -23,7 +23,15 @@
 	                <suiteXmlFiles>
 	                    <suiteXmlFile>testng.xml</suiteXmlFile>
 	                </suiteXmlFiles>
+	                <systemPropertyVariables>
+	                	<propertyName>setBrowser</propertyName>
+	                </systemPropertyVariables>
 	            </configuration>
+	        </plugin>
+	        <plugin>
+	        	<groupId>org.apache.maven.plugins</groupId>
+	        	<artifactId>maven-compiler-plugin</artifactId>
+	        	<version>3.1</version>
 	        </plugin>
 	    </plugins>
 	</build>

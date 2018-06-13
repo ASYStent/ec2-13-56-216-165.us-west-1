@@ -1,12 +1,9 @@
 package testNG;
 
 import org.testng.annotations.Test;
-
 import pageObjects.LoginPage;
-
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
 
 public class TestCasesForLogin extends Start {
 	
@@ -31,7 +28,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
 	@Parameters("Password")
- 	@Test (priority = 1)
+ 	@Test 
 	public void Verify_user_cannot_login_with_blank_Email_field(String Password){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -41,7 +38,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
 	@Parameters("Username")
- 	@Test (priority = 2)
+ 	@Test 
  	public void Verify_user_cannot_login_with_blank_Password_field(String Username){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -50,7 +47,7 @@ public class TestCasesForLogin extends Start {
  			LG.verifyError();
  	}
  	
- 	@Test (priority = 3)
+ 	@Test 
  	public void Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page(){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -59,7 +56,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters({"Username","GPassword"})
- 	@Test (priority = 4)
+ 	@Test 
  	public void Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(String Username, String GPassword) throws InterruptedException{
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -77,7 +74,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters("Username")
- 	@Test (priority = 5)
+ 	@Test 
  	public void Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email(String Username){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -88,7 +85,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters("Username")
- 	@Test (priority = 6)
+ 	@Test 
  	public void Verify_that_user_can_copy_and_paste_email_field_info(String Username){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -97,7 +94,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters("Password")
- 	@Test (priority = 7)
+ 	@Test 
  	public void Verify_user_cannot_copypaste_values_from_Password_and_Retype_password_fields(String Password){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -106,7 +103,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters("Password")
- 	@Test (priority = 8)
+ 	@Test 
  	public void Verify_Password_field_masks_users_input_with_bullets(String Password){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -115,7 +112,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters({"Username","ERPassword"})
- 	@Test (priority = 9)
+ 	@Test 
  	public void Verify_user_cannot_login_with_an_invalid_password(String Username, String ERPassword){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -126,7 +123,7 @@ public class TestCasesForLogin extends Start {
  	}
  	
  	@Parameters({"ERUsername","Password"})
- 	@Test (priority = 10)
+ 	@Test 
  	public void Verify_user_cannot_login_with_an_invalid_email_address(String ERUsername, String Password){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
 			LG.getSingInURL();
@@ -136,7 +133,7 @@ public class TestCasesForLogin extends Start {
 			LG.verifyError2();
  	}
  	
- 	@Test (priority = 10)
+ 	@Test 
  	public void Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page(){
  		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
  			LG.getSingInURL();
@@ -144,7 +141,7 @@ public class TestCasesForLogin extends Start {
  			LG.verifyRegisterPage();
  	}
 // 	
-// 	@Test (priority = 11)
+// 	@Test 
 // 	public void Verify_email_text_box_is_identified_with_both_Enter_email_content_and_letter_icon(){
 // 		LoginPage LG = PageFactory.initElements(driver, LoginPage.class);
 // 			

@@ -1,0 +1,123 @@
+Found "D:\MyDoc\automation\java-webdriver-testng-maven\ProMytheUs\.mvn\wrapper\maven-wrapper.jar"
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for WebdriverTest:WebdriverTest:jar:0.0.1-SNAPSHOT
+[WARNING] 'build.plugins.plugin.(groupId:artifactId)' must be unique but found duplicate declaration of plugin org.apache.maven.plugins:maven-compiler-plugin @ line 31, column 18
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building WebdriverTest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ WebdriverTest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ WebdriverTest ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ WebdriverTest ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ WebdriverTest ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ WebdriverTest ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running TestSuite
+Browser Opened.
+Title is displayed
+Error is displayed
+Error is displayed
+Error is displayed
+Finish Test Suite.
+[ERROR] Tests run: 12, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 20.384 s <<< FAILURE! - in TestSuite
+[ERROR] Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page(testNG.TestCasesForLogin)  Time elapsed: 0.84 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a class="text-muted" ui-sref="auth.passReset({email: SignInCtrl.data.email})" href="/password-reset.html">...</a> is not clickable at point (595, 339). Other element would receive the click: <div class="content">...</div>
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NIKITA-PC', ip: '172.31.98.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=d:\temp\scoped_dir8380_248}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b16bd903249942ac9758f5f7adc7d879
+	at testNG.TestCasesForLogin.Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page(TestCasesForLogin.java:54)
+
+[ERROR] Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(testNG.TestCasesForLogin)  Time elapsed: 0.64 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a class="text-muted" ui-sref="auth.passReset({email: SignInCtrl.data.email})" href="/password-reset.html">...</a> is not clickable at point (595, 339). Other element would receive the click: <div class="content">...</div>
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NIKITA-PC', ip: '172.31.98.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=d:\temp\scoped_dir8380_248}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b16bd903249942ac9758f5f7adc7d879
+	at testNG.TestCasesForLogin.Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen(TestCasesForLogin.java:63)
+
+[ERROR] Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email(testNG.TestCasesForLogin)  Time elapsed: 1.254 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <button class="btn btn-danger btn-block">...</button> is not clickable at point (517, 374). Other element would receive the click: <button class="btn btn-block btn-primary mt-lg" id="login">...</button>
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NIKITA-PC', ip: '172.31.98.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=d:\temp\scoped_dir8380_248}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b16bd903249942ac9758f5f7adc7d879
+	at testNG.TestCasesForLogin.Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email(TestCasesForLogin.java:83)
+
+[ERROR] Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page(testNG.TestCasesForLogin)  Time elapsed: 0.586 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: Element <a class="btn btn-block btn-default" ui-sref="auth.signUp" href="/sign-up.html">...</a> is not clickable at point (517, 476). Other element would receive the click: <div class="cover" ng-class="{'active': $ctrl.isActive}">...</div>
+  (Session info: chrome=67.0.3396.79)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'NIKITA-PC', ip: '172.31.98.120', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_152'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=d:\temp\scoped_dir8380_248}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=67.0.3396.79, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b16bd903249942ac9758f5f7adc7d879
+	at testNG.TestCasesForLogin.Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page(TestCasesForLogin.java:140)
+
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   TestCasesForLogin.Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page:54 ¯ WebDriver
+[ERROR]   TestCasesForLogin.Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page:140 ¯ WebDriver
+[ERROR]   TestCasesForLogin.Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email:83 ¯ WebDriver
+[ERROR]   TestCasesForLogin.Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen:63 ¯ WebDriver
+[INFO] 
+[ERROR] Tests run: 12, Failures: 4, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25.012 s
+[INFO] Finished at: 2018-06-07T18:39:51-07:00
+[INFO] Final Memory: 14M/220M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.20.1:test (default-test) on project WebdriverTest: There are test failures.
+[ERROR] 
+[ERROR] Please refer to D:\MyDoc\automation\java-webdriver-testng-maven\ProMytheUs\target\surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

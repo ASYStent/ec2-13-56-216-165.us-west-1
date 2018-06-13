@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test verbose="0" name="Test(failed)">
     <parameter name="ERPassword" value="12345678"/>
     <parameter name="Username" value="dovgichnik@gmail.com"/>
     <parameter name="ERUsername" value="dovgichnik1@gmail.com"/>
@@ -12,8 +12,10 @@
         <methods>
           <include name="Verify_that_user_receives_email_to_reset_password_after_entering_valid_email_address_in_Password_Reset_screen" invocation-numbers="0"/>
           <include name="closeBrowser"/>
+          <include name="Verify_Register_Now_in_login_page_will_redirect_user_to_the_registration_page"/>
           <include name="beforeSuite"/>
           <include name="Verify_that_the_Forgot_Password_field_does_not_accept_invalid_email" invocation-numbers="0"/>
+          <include name="Verify_Forgot_your_password_will_redirect_user_to_How_to_reset_password_page"/>
         </methods>
       </class> <!-- testNG.TestCasesForLogin -->
     </classes>
